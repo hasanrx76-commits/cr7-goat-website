@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GOAT · CR7 — Poori Kahani (A se Z)</title>
+<meta name="description" content="Cristiano Ronaldo ki poori kahani — Madeira se lekar 2026 tak. Har saal ki floating photo + year-by-year 3D timeline.">
+<meta name="theme-color" content="#05060a">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐐</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="loading">
+
+<!-- Loader -->
+<div id="loader">
+  <div class="ldr-inner">
+    <div class="ldr-brand">CR7</div>
+    <div class="ldr-num" id="ldrNum">0%</div>
+    <div class="ldr-bar"><i id="ldrFill"></i></div>
+    <div class="ldr-cap">LOADING THE JOURNEY</div>
+  </div>
+</div>
+
+<!-- Starfield background -->
+<canvas id="stars" aria-hidden="true"></canvas>
+
+<!-- Cinematic overlays -->
+<div class="cursor-glow" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<!-- Header -->
+<header class="site-head">
+  <div class="brand">CR7<span>&nbsp;·&nbsp;GOAT</span></div>
+  <div class="yr" id="headYear">1985</div>
+  <nav class="topnav">
+    <a href="#timeline">Kahani</a>
+    <a href="#legacy">Records</a>
+  </nav>
+  <div class="progress"><i id="progressFill"></i></div>
+</header>
+
+<!-- Chapter rail -->
+<nav class="rail" id="rail" aria-label="Saal navigation"></nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-glow" aria-hidden="true"></div>
+
+  <!-- floating era photos -->
+  <div class="hero-photos" aria-hidden="true">
+    <div class="hero-slot hs1 parallax" data-depth="18">
+      <figure class="hero-card rot1">
+        <img src="assets/img/cr7_2016.jpg" alt="" decoding="async">
+        <figcaption>Euro 2016 · Champion</figcaption>
+      </figure>
+    </div>
+    <div class="hero-slot hs2 parallax" data-depth="13">
+      <figure class="hero-card rot2">
+        <img src="assets/img/cr7_ballondor.jpg" alt="" decoding="async">
+        <figcaption>5× Ballon d'Or</figcaption>
+      </figure>
+    </div>
+    <div class="hero-slot hs3 parallax" data-depth="24">
+      <figure class="hero-card rot3">
+        <img src="assets/img/cr7_2026b.jpg" alt="" decoding="async">
+        <figcaption>2026 · 6th World Cup</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <p class="kicker">The Untold Journey · 1985 → 2026</p>
+  <h1>GOAT</h1>
+  <p class="hero-sub">Cristiano Ronaldo — Madeira se duniya tak</p>
+  <p class="hero-lead">
+    Garibi, dil ki bimari, aansu, jeet aur legacy — poori kahani saal dar saal.
+    Har saal ek floating photo us daur ki, us saal ki kahani, aankde aur
+    wo pal hain jo football ki duniya mein kabhi nahi bhoolenge.
+  </p>
+  <div class="stats-strip">
+    <div class="stat"><b>5</b><span>Ballon d'Or</span></div>
+    <div class="stat"><b>5</b><span>Champions League</span></div>
+    <div class="stat"><b>976+</b><span>Career Goals</span></div>
+    <div class="stat"><b>146</b><span>Portugal Goals</span></div>
+    <div class="stat"><b>4</b><span>Leagues Jeeti</span></div>
+  </div>
+  <div class="scroll-cue">SCROLL &nbsp;↓</div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="mq-track">
+    <span>GOAT ✦ CR7 ✦ SIUUU ✦ 5× BALLON D'OR ✦ 5× CHAMPIONS LEAGUE ✦ 976+ GOALS ✦ 146 PORTUGAL GOALS ✦ 6 WORLD CUPS ✦ MADEIRA → LEGEND ✦&nbsp;</span>
+    <span>GOAT ✦ CR7 ✦ SIUUU ✦ 5× BALLON D'OR ✦ 5× CHAMPIONS LEAGUE ✦ 976+ GOALS ✦ 146 PORTUGAL GOALS ✦ 6 WORLD CUPS ✦ MADEIRA → LEGEND ✦&nbsp;</span>
+  </div>
+</div>
+
+<!-- TIMELINE (JS injects year chapters here) -->
+<main id="timeline"></main>
+
+<!-- LEGACY -->
+<section class="legacy" id="legacy">
+  <p class="kicker">The Final Chapter</p>
+  <h2>THE LEGACY</h2>
+  <p class="legacy-lead">
+    Ek chhote island ke garib ghar se nikla ladka — duniya ka sabse zyada follow kiya jaane wala insaan,
+    football ka sabse bada goalscorer, aur un logon ke liye misaal jo aaj bhi sapne dekhte hain.
+  </p>
+
+  <div class="gallery reveal">
+    <figure class="g-card tilt"><img src="assets/img/cr7_5098.jpg" alt="Cristiano Ronaldo — Real Madrid white kit closeup" loading="lazy" decoding="async"><figcaption>450 Real Madrid Goals</figcaption></figure>
+    <figure class="g-card tilt"><img src="assets/img/cr7_statue.jpg" alt="Cristiano Ronaldo statue, Madeira" loading="lazy" decoding="async"><figcaption>Madeira · Statue</figcaption></figure>
+    <figure class="g-card tilt"><img src="assets/img/cr7_0876.jpg" alt="Cristiano Ronaldo — Portugal celebration" loading="lazy" decoding="async"><figcaption>Portugal · Captain</figcaption></figure>
+    <figure class="g-card tilt"><img src="assets/img/cr7_2026a.jpg" alt="Cristiano Ronaldo, 2026" loading="lazy" decoding="async"><figcaption>2026 · Abhi tak</figcaption></figure>
+  </div>
+
+  <div class="rec-grid">
+    <div class="rec"><b>5</b><span>Ballon d'Or</span></div>
+    <div class="rec"><b>5</b><span>Champions League</span></div>
+    <div class="rec"><b>450</b><span>Real Madrid Goals</span></div>
+    <div class="rec"><b>233</b><span>Portugal Caps</span></div>
+    <div class="rec"><b>146</b><span>Portugal Goals</span></div>
+    <div class="rec"><b>976+</b><span>Career Goals</span></div>
+    <div class="rec"><b>6</b><span>World Cups Khela</span></div>
+    <div class="rec"><b>35</b><span>Saudi League Record Goals</span></div>
+  </div>
+
+  <h3 class="legacy-h3">Is kahani se seekh</h3>
+  <ol class="lessons">
+    <li><i>01</i><span>Shuruaat kahan se hui — ye matter nahi karta. Madeira ke garib ghar se duniya ke top tak mumkin hai.</span></li>
+    <li><i>02</i><span>Sapne ke liye qurbani: 12 saal ki umar mein ghar chhodna, jo aasaan nahi tha.</span></li>
+    <li><i>03</i><span>Mushkil mein bhi mat ruko: dil ki bimari ke baad bhi woh wapas aaya.</span></li>
+    <li><i>04</i><span>Haar se seekho: Euro 2004, Qatar 2022, WC 2026 — har haar ke baad woh aur taiyar hua.</span></li>
+    <li><i>05</i><span>Mehnat ka koi shortcut nahi: training, neend, khana — har cheez par dhyan.</span></li>
+    <li><i>06</i><span>Insaan bhi hai: vivaad, galtiyan aur dukh, sab uski kahani ka hissa hain.</span></li>
+    <li><i>07</i><span>Umar ek number hai: 41 saal ki umar mein bhi league title aur World Cup.</span></li>
+  </ol>
+</section>
+
+<footer>
+  <img class="foot-sign" src="assets/img/cr7_signature.svg" alt="Cristiano Ronaldo signature" loading="lazy">
+  <p>GOAT · CR7 — Poori Kahani (A se Z) · Jaankari 10 October 2026 tak</p>
+  <p class="foot-note">Sources: Fox Sports · beIN Sports · Al Jazeera · TNT Sports · Olympics.com · Sportskeeda</p>
+  <p class="foot-note">Photos: Wikimedia Commons (CC BY-SA / free license) · Fan tribute, non-commercial</p>
+</footer>
+
+<noscript><p style="text-align:center;padding:40px">Is website ke animations ke liye JavaScript on karein.</p></noscript>
+<script src="app.js"></script>
+</body>
+</html>
